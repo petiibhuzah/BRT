@@ -15,8 +15,8 @@
                                 <table class="shop_table cart">
                                     <thead class="cart-product-wrap-title-main">
                                     <tr>
-                                        <th class="product-thumbnail">Total Number Bookings</th>
-                                        <th class="product-quantity">Total Number Tickets</th>
+                                        <th class="product-thumbnail">Total No. Bookings</th>
+                                        <th class="product-quantity">Total No. Tickets</th>
                                     </tr>
                                     </thead>
                                     <tbody>
