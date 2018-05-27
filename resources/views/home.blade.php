@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-center"> Welcome</div>
+                <div class="card-header text-center"> Welcome ,{{ Auth::user()->name }} </div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    Welcome To Our Site , {{ Auth::user()->name }}
+                    Welcome To Our Site , click <a href="{{route('index')}}">Here to go Home page</a>
                 </div>
             </div>
         </div>
