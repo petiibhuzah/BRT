@@ -4,7 +4,9 @@
     <div class="row">
     <div class="col-md-3"></div>
     <div class="col-md-6">
+
     <div class="card ">
+        @if(Auth::user()->role == 1)
         <div class="card-header text-center">{{ __('Source Destinations') }}</div>
         <div class="card table-responsive">
             <table class="table table-hover table-striped table-light">
@@ -30,8 +32,12 @@
                 @endif
                 </tbody>
             </table>
+            @else
+                <h4>Your Not allowed To view this Page</h4>
         </div>
     </div>
     </div>
+
+        @endif
     </div>
 @stop

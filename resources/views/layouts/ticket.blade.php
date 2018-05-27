@@ -38,6 +38,7 @@
     <div class="container">
         <div class="header-content-wrapper">
             <a href="{{route('index')}}"><b>Home</b></a>
+            <a href="{{route('QRcode')}}" style="padding-left: 10px;"><b>Ticket</b></a>
             <ul class="nav-add">
                 <li class="cart">
 
@@ -50,9 +51,9 @@
                         <div class="popup-cart">
                             <h4 class="title-cart align-center">Total : Tsh {{Cart::total()}}</h4>
                             <a href="{{route('booking')}}">
-                            <div class="btn btn-small btn--dark">
-                               <span class="text">View Booking Store</span>
-                            </div>
+                                <div class="btn btn-small btn--dark">
+                                    <span class="text">View Booking Store</span>
+                                </div>
                             </a>
                         </div>
                     </div>
@@ -97,7 +98,7 @@
 
 <script>
     @if(Session::has('success'))
-        toastr.success('{{Session::get('success')}}');
+    toastr.success('{{Session::get('success')}}');
     @endif
     @if(Session::has('info'))
     toastr.info('{{Session::get('info')}}');

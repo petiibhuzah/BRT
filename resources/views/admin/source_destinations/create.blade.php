@@ -5,6 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <div class="card">
+                    @if(Auth::user()->role == 1)
                     <div class="card-header text-center">{{ __('Create Source-Destination') }}</div>
 
                     <div class="card-body">
@@ -80,6 +81,9 @@
                             </div>
                         </form>
                     </div>
+                    @else
+                        <h3>Your Not Allowed to view this Page</h3>
+                    @endif
                 </div>
             </div>
         </div>

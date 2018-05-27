@@ -33,10 +33,14 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    @if(Auth::check())
                     <ul class="navbar-nav mr-auto">
+                        @if(Auth::user()->role == 1)
                         <li><a href="{{route('source_destination.create')}}" class="nav-link">New  <b>Source Destinations</b></a></li>
                         <li><a href="{{route('source_destination')}}" class="nav-link"><b>Source Destinations</b></a></li>
+                            @endif
                     </ul>
+                    @endif
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

@@ -5,6 +5,7 @@
         <div class="row justify-content-center">
             <div class="col-md-10">
                 <div class="card">
+                    @if(Auth::user()->role == 1)
                     <div class="card-header text-center">{{ __('Edit Source-Destination') }}  :{{$source_destination->source_destination_name}}</div>
 
                     <div class="card-body">
@@ -80,6 +81,9 @@
                             </div>
                         </form>
                     </div>
+                    @else
+                        <h4>Your Not Allowed To view this Page</h4>
+                    @endif
                 </div>
             </div>
         </div>
