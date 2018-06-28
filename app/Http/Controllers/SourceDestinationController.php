@@ -20,8 +20,6 @@ class SourceDestinationController extends Controller
     public function index()
     {
        return view('admin.source_destinations.index')->with('source_destinations',Source_Destination::all());
-        // $res = Source_Destination::all();
-        // return json_encode(array('result'=>$res));
     }
 
     /**
