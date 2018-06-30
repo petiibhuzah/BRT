@@ -12,7 +12,7 @@ class QRcodeController extends Controller
 {
     public function QRcode(){
 
-        $uda ="UDA";
+        $uda =md5("UDA");
         $id = Auth::id();
         return view('ticket')->with('uda',$uda)
                                   ->with('booking_count',Booking::where('user_id',$id)->count())
