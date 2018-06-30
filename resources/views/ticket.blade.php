@@ -24,23 +24,23 @@
                                     <tbody>
                                         <tr class="cart_item">
 
-                                            {{--<td class="product-thumbnail">--}}
+                                            <td class="product-thumbnail">
 
-                                                {{--<div class="cart-product__item">--}}
-                                                    {{--<div class="cart-product-content">--}}
-                                                        {{--<h5 class="cart-product-title">{{$booking_count }} Bookings</h5>--}}
-                                                    {{--</div>--}}
-                                                {{--</div>--}}
-                                            {{--</td>--}}
+                                                <div class="cart-product__item">
+                                                    <div class="cart-product-content">
+                                                        <h5 class="cart-product-title">{{$booking_count }} Bookings</h5>
+                                                    </div>
+                                                </div>
+                                            </td>
 
-                                            {{--<td class="product-quantity">--}}
-                                                {{--<h5 class="cart-product-title">{{$checkout_count }} Checkouts</h5>--}}
+                                            <td class="product-quantity">
+                                                <h5 class="cart-product-title">{{$checkout_count }} Checkouts</h5>
 
-                                                {{--<div class="quantity">--}}
+                                                <div class="quantity">
 
-                                                {{--</div>--}}
+                                                </div>
 
-                                            {{--</td>--}}
+                                            </td>
 
                                         </tr>
 
