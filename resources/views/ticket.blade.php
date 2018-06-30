@@ -10,7 +10,8 @@
                     <h5 class="order-title align-center"></h5>
                     <div class="col-lg-12">
                         <div class="order">
-                            <h3 class="h3 order-title align-center " style="color: #4CC2C0;"><a href="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(300)->generate($uda))!!}">Click Here To Download The Ticket</a></h3>
+                            <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(300)->generate($uda))!!}" alt="Hii">
+                            {{--<h3 class="h3 order-title align-center " style="color: #4CC2C0;"><a href="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(300)->generate($uda))!!}">Click Here To Download The Ticket</a></h3>--}}
                             <div class="cart-main">
                                 <table class="shop_table cart">
                                     <thead class="cart-product-wrap-title-main">
